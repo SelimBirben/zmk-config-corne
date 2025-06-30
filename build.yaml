@@ -20,6 +20,10 @@
 include:
   - board: nice_nano_v2
     shield: corne_left
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: corne_left_debug
+  - board: nice_nano_v2
+    shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
   - board: nice_nano_v2
