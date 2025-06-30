@@ -10,6 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+        // Add kscan configuration with wakeup-source enabled
+        // This ensures BLE can wake on keypress from deep sleep
+        kscan0: kscan {
+                compatible = "zmk,kscan-gpio-matrix";
+                label = "KSCAN";
+                wakeup-source;
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
